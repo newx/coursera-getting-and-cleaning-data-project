@@ -1,0 +1,17 @@
+# Getting and Cleaning Data Course Project
+
+This repository is related to Coursera "Getting and Cleaning Data" course project
+from Coursera
+
+See https://www.coursera.org/learn/data-cleaning/home/welcome
+
+Dataset used: "Human Activity Recognition Using Smartphones"
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+## FILES
+
+* `README.md` - this file
+* `CodeBook.md` - a code book that describes the variables, the data, and any
+  transformations or work that you performed to clean up the data.
+* `run_analysis.R` - a R script to perform all steps described below and outputs
+  a tidy data file.
