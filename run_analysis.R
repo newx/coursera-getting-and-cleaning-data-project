@@ -81,11 +81,18 @@ names(data_activity) <- "activity"
 # Step 4 - Appropriately labels the data set with descriptive variable names.
 # ------------------------------------------------------------------------------
 
-# renames column name
+# renames subject column name
 names(data_subject) <- "subject"
 
 # combines all the data to a single data table
 combined_data <- cbind(data_log, data_activity, data_subject)
+
+names(combined_data) <- gsub("^t", "time", names(combined_data))
+names(combined_data) <- gsub("^f", "frequency", names(combined_data))
+names(combined_data) <- gsub("Acc", "Accelerometer", names(combined_data))
+names(combined_data) <- gsub("Gyro", "Gyroscope", names(combined_data))
+names(combined_data) <- gsub("Mag", "Magnitude", names(combined_data))
+names(combined_data) <- gsub("BodyBody", "Body", names(combined_data))
 
 # Step 5 - From the data set in step 4, creates a second, independent tidy data
 # set with the average of each variable for each activity and each subject.
