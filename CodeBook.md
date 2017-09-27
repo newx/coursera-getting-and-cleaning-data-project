@@ -24,7 +24,7 @@ found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using
 - Export the resulting tidy data to a .txt file names "tidy_averages_data.txt"
   using `write.table`.
 
-# VARIABLES
+# CODE VARIABLES
 
 * `url` - original dataset URL.
 * `path` - current working directory.
@@ -43,3 +43,76 @@ found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using
 * `averages_data` - contains averages for each measurement which were calculated
   using `ddply()` from `plyr` package to apply `colMeans()` for each observation
   measurement.
+
+# TIDY DATA SET VARIABLES
+
+- `subject` - id of a person who participated in the experiement. Integer ranging from `1` to `30`
+- `activity` - type of activity performed by the person. Factor with levels `LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING UPSTAIRS`
+
+  Other 66 numeric columns with measurements that were taken by accelerometer and gyroscope during the experiment:
+  - `tBodyAccMeanX`
+  - `tBodyAccMeanY`
+  - `tBodyAccMeanZ`
+  - `tBodyAccStdX`
+  - `tBodyAccStdY`
+  - `tBodyAccStdZ`
+  - `tGravityAccMeanX`
+  - `tGravityAccMeanY`
+  - `tGravityAccMeanZ`
+  - `tGravityAccStdX`
+  - `tGravityAccStdY`
+  - `tGravityAccStdZ`
+  - `tBodyAccJerkMeanX`
+  - `tBodyAccJerkMeanY`
+  - `tBodyAccJerkMeanZ`
+  - `tBodyAccJerkStdX`
+  - `tBodyAccJerkStdY`
+  - `tBodyAccJerkStdZ`
+  - `tBodyGyroMeanX`
+  - `tBodyGyroMeanY`
+  - `tBodyGyroMeanZ`
+  - `tBodyGyroStdX`
+  - `tBodyGyroStdY`
+  - `tBodyGyroStdZ`
+  - `tBodyGyroJerkMeanX`
+  - `tBodyGyroJerkMeanY`
+  - `tBodyGyroJerkMeanZ`
+  - `tBodyGyroJerkStdX`
+  - `tBodyGyroJerkStdY`
+  - `tBodyGyroJerkStdZ`
+  - `tBodyAccMagMean`
+  - `tBodyAccMagStd`
+  - `tGravityAccMagMean`
+  - `tGravityAccMagStd`
+  - `tBodyAccJerkMagMean`
+  - `tBodyAccJerkMagStd`
+  - `tBodyGyroMagMean`
+  - `tBodyGyroMagStd`
+  - `tBodyGyroJerkMagMean`
+  - `tBodyGyroJerkMagStd`
+  - `fBodyAccMeanX`
+  - `fBodyAccMeanY`
+  - `fBodyAccMeanZ`
+  - `fBodyAccStdX`
+  - `fBodyAccStdY`
+  - `fBodyAccStdZ`
+  - `fBodyAccJerkMeanX`
+  - `fBodyAccJerkMeanY`
+  - `fBodyAccJerkMeanZ`
+  - `fBodyAccJerkStdX`
+  - `fBodyAccJerkStdY`
+  - `fBodyAccJerkStdZ`
+  - `fBodyGyroMeanX`
+  - `fBodyGyroMeanY`
+  - `fBodyGyroMeanZ`
+  - `fBodyGyroStdX`
+  - `fBodyGyroStdY`
+  - `fBodyGyroStdZ`
+  - `fBodyAccMagMean`
+  - `fBodyAccMagStd`
+  - `fBodyBodyAccJerkMagMean`
+  - `fBodyBodyAccJerkMagStd`
+  - `fBodyBodyGyroMagMean`
+  - `fBodyBodyGyroMagStd`
+  - `fBodyBodyGyroJerkMagMean`
+  - `fBodyBodyGyroJerkMagStd`
